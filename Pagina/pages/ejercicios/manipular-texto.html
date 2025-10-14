@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Pasatiempos</title>
+    <title>Manipular Secuencia de Textos</title>
     <link rel="stylesheet" href="/Pagina/assets/css/estilos.css">
 </head>
 
@@ -18,7 +18,7 @@
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="/Pagina/index.html">Inicio</a></li>
-                <li><a href="">Pasatiempos</a></li>
+                <li><a href="/Pagina/pages/pasatiempos.html">Pasatiempos</a></li>
                 <li><a href="/Pagina/index.html#contactame">Contáctame</a></li>
                 <li><a href="/Pagina/pages/ejercicios.html">Ejercicios</a></li>
             </ul>
@@ -26,26 +26,25 @@
     </header>
 
     <main>
-        <section id="pasatiempos">
-            <div class="pasatiempos-container">
-                <h2>Mis Pasatiempos</h2>
-                <div class="pasatiempos-grid">
-                    <div class="pasatiempo-card">
-                        <div class="pasatiempo-icon">🥋</div>
-                        <h3>Karate</h3>
-                    </div>
-                    <div class="pasatiempo-card">
-                        <div class="pasatiempo-icon">🎵</div>
-                        <h3>Música</h3>
-                    </div>
-                    <div class="pasatiempo-card">
-                        <div class="pasatiempo-icon">🍔</div>
-                        <h3>Comer</h3>
-                    </div>
-                    <div class="pasatiempo-card">
-                        <div class="pasatiempo-icon">💃</div>
-                        <h3>Danza</h3>
-                    </div>
+        <section id="manipular-texto-app">
+            <div class="calculadora-container">
+                <h2>Manipulador de Secuencia de Textos</h2>
+                <p>Define cuántos textos quieres analizar, ingrésalos y mira sus propiedades.</p>
+                
+                <div class="form-group-inline">
+                    <label for="cantidadTextos">¿Cuántos textos quieres analizar?</label>
+                    <input type="number" id="cantidadTextos" min="1" placeholder="Ej: 3">
+                    <button id="generarCamposBtn">Generar Campos</button>
+                </div>
+
+                <div id="camposTextoContainer">
+                </div>
+
+                <div id="controlesAnalizar" style="display: none;">
+                    <button id="analizarBtn">Analizar Textos</button>
+                </div>
+
+                <div id="resultadoAnalisis" class="resultado-container" style="display: none;">
                 </div>
             </div>
         </section>
@@ -60,6 +59,8 @@
             Vallejo, Gustavo A. Madero, 07320 Ciudad de M&eacute;xico, CDMX
         </address>
     </footer>
+
+    <script src="/Pagina/assets/js/manipular-texto.js"></script>
 </body>
 
 </html>

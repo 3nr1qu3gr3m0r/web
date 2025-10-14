@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de CURP</title>
+    <link rel="stylesheet" href="/Pagina/assets/css/estilos.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo-section">
+                <a href="/Pagina/index.html">
+                    <img src="https://www.escom.ipn.mx/images/logoESCOM2x.png" alt="Logo ESCOM" class="logo">
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/Pagina/index.html">Inicio</a></li>
+                <li><a href="/Pagina/pages/pasatiempos.html">Pasatiempos</a></li>
+                <li><a href="/Pagina/index.html#contactame">Contáctame</a></li>
+                <li><a href="/Pagina/pages/ejercicios.html">Ejercicios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="curp-generator-app">
+            <div class="calculadora-container">
+                <h2>Generador de CURP</h2>
+                <p>Ingresa tus datos para generar los primeros 16 caracteres de tu CURP.</p>
+
+                <div class="curp-form-grid">
+                    <div class="form-group">
+                        <label for="nombre">Nombre(s):</label>
+                        <input type="text" id="nombre" placeholder="JUAN">
+                    </div>
+                    <div class="form-group">
+                        <label for="paterno">Apellido Paterno:</label>
+                        <input type="text" id="paterno" placeholder="PEREZ">
+                    </div>
+                    <div class="form-group">
+                        <label for="materno">Apellido Materno:</label>
+                        <input type="text" id="materno" placeholder="GOMEZ">
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha de Nacimiento:</label>
+                        <input type="date" id="fecha">
+                    </div>
+                    <div class="form-group">
+                        <label for="sexo">Sexo:</label>
+                        <select id="sexo">
+                            <option value="H">Hombre</option>
+                            <option value="M">Mujer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="lugar">Entidad Federativa:</label>
+                        <input type="text" id="lugar" maxlength="2" placeholder="DF">
+                    </div>
+                </div>
+
+                <button id="generarBtn">Generar CURP</button>
+
+                <div id="resultadoCurp" class="resultado-container" style="display: none;">
+                    <!-- El resultado se mostrará aquí -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2025 4BM2 - ESCOM - IPN - Todos los derechos reservados.
+        </p>
+        <address>
+            ESCOM IPN, Unidad Profesional Adolfo L&oacute;pez Mateos, Av. Juan de Dios B&aacute;tiz, Nueva Industrial
+            Vallejo, Gustavo A. Madero, 07320 Ciudad de M&eacute;xico, CDMX
+        </address>
+    </footer>
+
+    <script src="/Pagina/assets/js/curp.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas de Multiplicar</title>
+    <link rel="stylesheet" href="/Pagina/assets/css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo-section">
+                <a href="/Pagina/index.html">
+                    <img src="https://www.escom.ipn.mx/images/logoESCOM2x.png" alt="Logo ESCOM" class="logo">
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/Pagina/index.html">Inicio</a></li>
+                <li><a href="/Pagina/pages/pasatiempos.html">Pasatiempos</a></li>
+                <li><a href="/Pagina/index.html#contactame">Contáctame</a></li>
+                <li><a href="/Pagina/pages/ejercicios.html">Ejercicios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tablas-completas-app">
+            <div class="container">
+                <div class="table-wrapper">
+                    <div class="side-column">
+                        <div class="side-header">Filas por columnas</div>
+                    </div>
+                    <div class="grid-wrapper">
+                        <div class="main-title">Tablas de multiplicar</div>
+                        <div class="grid-container">
+                            <div class="grid-row">
+                                <div class="grid-cell header"></div> 
+                                <script>
+                                    for (let i = 1; i <= 10; i++) {
+                                        document.write(`<div class="grid-cell header">${i}</div>`);
+                                    }
+                                </script>
+                            </div>
+                            <script>
+                                for (let i = 1; i <= 10; i++) {
+                                    document.write('<div class="grid-row">');
+                                    document.write(`<div class="grid-cell header">${i}</div>`); 
+                                    for (let j = 1; j <= 10; j++) {
+                                        document.write(`<div class="grid-cell">${i * j}</div>`);
+                                    }
+                                    document.write('</div>');
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2025 4BM2 - ESCOM - IPN - Todos los derechos reservados.
+        </p>
+        <address>
+            ESCOM IPN, Unidad Profesional Adolfo L&oacute;pez Mateos, Av. Juan de Dios B&aacute;tiz, Nueva Industrial
+            Vallejo, Gustavo A. Madero, 07320 Ciudad de M&eacute;xico, CDMX
+        </address>
+    </footer>
+</body>
+
+</html>

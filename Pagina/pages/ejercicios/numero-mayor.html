@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Pasatiempos</title>
+    <title>Encontrar el Número Mayor</title>
     <link rel="stylesheet" href="/Pagina/assets/css/estilos.css">
 </head>
 
@@ -18,7 +18,7 @@
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="/Pagina/index.html">Inicio</a></li>
-                <li><a href="">Pasatiempos</a></li>
+                <li><a href="/Pagina/pages/pasatiempos.html">Pasatiempos</a></li>
                 <li><a href="/Pagina/index.html#contactame">Contáctame</a></li>
                 <li><a href="/Pagina/pages/ejercicios.html">Ejercicios</a></li>
             </ul>
@@ -26,26 +26,25 @@
     </header>
 
     <main>
-        <section id="pasatiempos">
-            <div class="pasatiempos-container">
-                <h2>Mis Pasatiempos</h2>
-                <div class="pasatiempos-grid">
-                    <div class="pasatiempo-card">
-                        <div class="pasatiempo-icon">🥋</div>
-                        <h3>Karate</h3>
-                    </div>
-                    <div class="pasatiempo-card">
-                        <div class="pasatiempo-icon">🎵</div>
-                        <h3>Música</h3>
-                    </div>
-                    <div class="pasatiempo-card">
-                        <div class="pasatiempo-icon">🍔</div>
-                        <h3>Comer</h3>
-                    </div>
-                    <div class="pasatiempo-card">
-                        <div class="pasatiempo-icon">💃</div>
-                        <h3>Danza</h3>
-                    </div>
+        <section id="numero-mayor-app">
+            <div class="calculadora-container">
+                <h2>Encontrar el Número Mayor</h2>
+                <p>Define el tamaño de tu arreglo, ingresa los números y descubre cuál es el mayor y su posición.</p>
+
+                <div class="form-group-inline">
+                    <label for="cantidadNumeros">¿Cuántos números quieres ingresar?</label>
+                    <input type="number" id="cantidadNumeros" min="1" placeholder="Ej: 5">
+                    <button id="generarCamposBtn">Generar Campos</button>
+                </div>
+
+                <div id="camposContainer" class="campos-grid">
+                </div>
+
+                <div id="controlesBusqueda" style="display: none;">
+                    <button id="encontrarMayorBtn">Encontrar el Mayor</button>
+                </div>
+
+                <div id="resultadoNumeroMayor" class="resultado-container">
                 </div>
             </div>
         </section>
@@ -60,7 +59,8 @@
             Vallejo, Gustavo A. Madero, 07320 Ciudad de M&eacute;xico, CDMX
         </address>
     </footer>
+
+    <script src="/Pagina/assets/js/numero-mayor.js"></script>
 </body>
 
 </html>
-

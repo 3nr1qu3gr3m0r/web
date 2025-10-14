@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Pasatiempos</title>
+    <title>Tabla de Multiplicar</title>
     <link rel="stylesheet" href="/Pagina/assets/css/estilos.css">
 </head>
 
@@ -18,7 +18,7 @@
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="/Pagina/index.html">Inicio</a></li>
-                <li><a href="">Pasatiempos</a></li>
+                <li><a href="/Pagina/pages/pasatiempos.html">Pasatiempos</a></li>
                 <li><a href="/Pagina/index.html#contactame">Contáctame</a></li>
                 <li><a href="/Pagina/pages/ejercicios.html">Ejercicios</a></li>
             </ul>
@@ -26,26 +26,12 @@
     </header>
 
     <main>
-        <section id="pasatiempos">
-            <div class="pasatiempos-container">
-                <h2>Mis Pasatiempos</h2>
-                <div class="pasatiempos-grid">
-                    <div class="pasatiempo-card">
-                        <div class="pasatiempo-icon">🥋</div>
-                        <h3>Karate</h3>
-                    </div>
-                    <div class="pasatiempo-card">
-                        <div class="pasatiempo-icon">🎵</div>
-                        <h3>Música</h3>
-                    </div>
-                    <div class="pasatiempo-card">
-                        <div class="pasatiempo-icon">🍔</div>
-                        <h3>Comer</h3>
-                    </div>
-                    <div class="pasatiempo-card">
-                        <div class="pasatiempo-icon">💃</div>
-                        <h3>Danza</h3>
-                    </div>
+        <section id="tabla-multiplicar">
+            <div class="tabla-container">
+                <h2>Generador de Tabla de Multiplicar</h2>
+                <p>Haz clic en el botón para ingresar un número y generar su tabla de multiplicar del 0 al 10.</p>
+                <button id="generarTablaBtn">Ingresar Número</button>
+                <div id="resultadoTabla" class="resultado-tabla-container">
                 </div>
             </div>
         </section>
@@ -60,6 +46,8 @@
             Vallejo, Gustavo A. Madero, 07320 Ciudad de M&eacute;xico, CDMX
         </address>
     </footer>
+
+    <script src="/Pagina/assets/js/tabla-numero.js"></script>
 </body>
 
 </html>
